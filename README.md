@@ -2,4 +2,4 @@
 
 ## Indicaciones
 
-Se debe crear la carpeta chache para correr el proyecto
+Se debe crear la carpeta cache para correr el proyecto
