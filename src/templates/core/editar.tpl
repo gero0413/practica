@@ -20,19 +20,19 @@
                     <label>Nombre</label>
                     <input type="hidden" name="id" class="form-control" value="{$data_editar.id}">
                     <input type="hidden" name="funcion" class="form-control" value="actualizaContacto">
-                    <input type="text" name="nombre" class="form-control" value="{$data_editar.nombre}" required>
+                    <input type="text" name="nombre" class="form-control" value="{$data_editar.nombre}">
                 </div>
                 <div class="form-group">
                     <label>Celular</label>
-                    <input type="number" name="celular" class="form-control" min="0" max="10" value="{$data_editar.celular}" required>
+                    <input type="number" name="celular" class="form-control" value="{$data_editar.celular}">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" value="{$data_editar.email}" required>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" value="{$data_editar.email}">
                 </div>
                 <div class="form-group">
                     <label>Grupo</label>
-                    <select class="form-control" name="grupo" id="grupo" required>
+                    <select class="form-control" name="grupo" id="grupo">
                         <option value="{$data_editar.grupo}" selected>{$data_editar.grupo}</option>
                         <option>Trabajo</option>
                         <option>Familia</option>
