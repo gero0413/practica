@@ -13,8 +13,8 @@
 
     <body>
         <div class="container">
-            <div class="form-group row justify-content-center align-items-center minh-100">
-                <h3>Listado de contactos</h3>
+            <div class="form-group">
+                <h3 class="text-center">Listado contactos</h3>
             </div>
             <div class="form-group">
                 <table id="tablaContactos" class="table table-striped">
@@ -44,7 +44,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="form-group row justify-content-center align-items-center minh-100">
+            <div class="mx-auto" style="width: 200px;">
                 <a href="index.php?funcion=inserData" class="btn btn-primary">Agregar</a>
             </div>
         </div>

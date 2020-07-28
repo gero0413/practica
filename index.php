@@ -11,3 +11,6 @@ $funcion= isset($PARAMS['funcion'])? $PARAMS['funcion']:"index";
 $contactos = new Contactos($smarty);
 
 $contactos->$funcion($PARAMS);
+
+
+

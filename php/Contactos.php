@@ -24,6 +24,14 @@ class Contactos{
         }
     }
 
+    function getGrupo(){
+        $sql = "SELECT * FROM grupo_contacto";
+        $result = $this->database->consulta($sql);
+        if($result){
+            return $result;
+        }
+    }
+
     function editarContacto($id=""){
         $sql = "SELECT * FROM contacto WHERE id=$id";
         $result = $this->database->consulta($sql)[0];
@@ -58,6 +66,7 @@ class Contactos{
     }
 
     function inserData(){
+        $this->smarty->assign("grupo", $this->getGrupo());
         $this->smarty->display(TEMPLATESF."agregar.tpl");
     }
 }
